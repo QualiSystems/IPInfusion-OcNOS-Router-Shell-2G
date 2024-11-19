@@ -1,5 +1,4 @@
 #!/usr/bin/python
-# -*- coding: utf-8 -*-
 from cloudshell.shell.core.driver_context import (
     AutoLoadCommandContext,
     AutoLoadDetails,
@@ -44,7 +43,7 @@ class IPInfusionOcNOSShellDriver(
     SHELL_NAME = "IP Infusion OcNOS Router 2G"
 
     def __init__(self):
-        super(IPInfusionOcNOSShellDriver, self).__init__()
+        super().__init__()
         self._cli = None
 
     def initialize(self, context: InitCommandContext) -> str:
